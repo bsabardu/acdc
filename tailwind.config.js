@@ -16,6 +16,8 @@ module.exports = {
     extend: {
         backgroundImage: theme => ({
          'home': "url('/img/bg.jpg')",
+         'histoire': "url('/img/histoire.jpg')",
+         'valeurs': "url('/img/valeurs.jpg')",
         })
 
     },
