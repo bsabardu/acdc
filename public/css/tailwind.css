@@ -1873,6 +1873,22 @@ h1, h2, h3, h4 {
   background-image: url('/img/bg.jpg');
 }
 
+.bg-histoire {
+  background-image: url('/img/histoire.jpg');
+}
+
+.bg-valeurs {
+  background-image: url('/img/valeurs.jpg');
+}
+
+.bg-events {
+  background-image: url('/img/events.jpg');
+}
+
+.bg-pa {
+  background-image: url('/img/riders/pa.jpg');
+}
+
 .from-darkblue {
   --tw-gradient-from: #1C1B2B;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(28, 27, 43, 0));
@@ -17301,6 +17317,67 @@ h1, h2, h3, h4 {
           animation: bounce 1s infinite;
 }
 
+.btn {
+  --tw-bg-opacity: 1;
+  background-color: rgba(72, 169, 166, var(--tw-bg-opacity));
+  border-radius: 0.25rem;
+  font-weight: 700;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  --tw-text-opacity: 1;
+  color: rgba(224, 230, 245, var(--tw-text-opacity));
+}
+
+.btn-secondary {
+  font-weight: 700;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  --tw-text-opacity: 1;
+  color: rgba(72, 169, 166, var(--tw-text-opacity));
+}
+
+.social-wrapper {
+  --tw-bg-opacity: 1;
+  background-color: rgba(72, 169, 166, var(--tw-bg-opacity));
+  border-radius: 0.125rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  --tw-text-opacity: 1;
+  color: rgba(28, 27, 43, var(--tw-text-opacity));
+}
+
+.social-logo {
+  height: 1rem;
+  text-align: center;
+  width: 1rem;
+}
+
+.riders {
+  padding-top: 136%
+}
+
+.event_date_wrapper:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 3rem solid #48A9A6;
+  border-right: 1rem solid transparent;
+}
+
+.event_name_wrapper:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 3rem solid #48A9A6;
+  border-right: 1rem solid transparent;
+}
+
 @import url('../../node_modules/font-awesome/css/font-awesome.min.css');
 
 @media (min-width: 640px) {
@@ -18620,6 +18697,22 @@ h1, h2, h3, h4 {
 
   .sm\:bg-home {
     background-image: url('/img/bg.jpg');
+  }
+
+  .sm\:bg-histoire {
+    background-image: url('/img/histoire.jpg');
+  }
+
+  .sm\:bg-valeurs {
+    background-image: url('/img/valeurs.jpg');
+  }
+
+  .sm\:bg-events {
+    background-image: url('/img/events.jpg');
+  }
+
+  .sm\:bg-pa {
+    background-image: url('/img/riders/pa.jpg');
   }
 
   .sm\:from-darkblue {
@@ -33970,6 +34063,24 @@ h1, h2, h3, h4 {
     -webkit-animation: bounce 1s infinite;
             animation: bounce 1s infinite;
   }
+
+  .sm\:event_date_wrapper:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 3rem solid #48A9A6;
+    border-right: 1rem solid transparent;
+  }
+
+  .sm\:event_name_wrapper:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 3rem solid #48A9A6;
+    border-right: 1rem solid transparent;
+  }
 }
 
 @media (min-width: 768px) {
@@ -35289,6 +35400,22 @@ h1, h2, h3, h4 {
 
   .md\:bg-home {
     background-image: url('/img/bg.jpg');
+  }
+
+  .md\:bg-histoire {
+    background-image: url('/img/histoire.jpg');
+  }
+
+  .md\:bg-valeurs {
+    background-image: url('/img/valeurs.jpg');
+  }
+
+  .md\:bg-events {
+    background-image: url('/img/events.jpg');
+  }
+
+  .md\:bg-pa {
+    background-image: url('/img/riders/pa.jpg');
   }
 
   .md\:from-darkblue {
@@ -50639,6 +50766,24 @@ h1, h2, h3, h4 {
     -webkit-animation: bounce 1s infinite;
             animation: bounce 1s infinite;
   }
+
+  .md\:event_date_wrapper:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 3rem solid #48A9A6;
+    border-right: 1rem solid transparent;
+  }
+
+  .md\:event_name_wrapper:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 3rem solid #48A9A6;
+    border-right: 1rem solid transparent;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -51958,6 +52103,22 @@ h1, h2, h3, h4 {
 
   .lg\:bg-home {
     background-image: url('/img/bg.jpg');
+  }
+
+  .lg\:bg-histoire {
+    background-image: url('/img/histoire.jpg');
+  }
+
+  .lg\:bg-valeurs {
+    background-image: url('/img/valeurs.jpg');
+  }
+
+  .lg\:bg-events {
+    background-image: url('/img/events.jpg');
+  }
+
+  .lg\:bg-pa {
+    background-image: url('/img/riders/pa.jpg');
   }
 
   .lg\:from-darkblue {
@@ -67308,6 +67469,24 @@ h1, h2, h3, h4 {
     -webkit-animation: bounce 1s infinite;
             animation: bounce 1s infinite;
   }
+
+  .lg\:event_date_wrapper:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 3rem solid #48A9A6;
+    border-right: 1rem solid transparent;
+  }
+
+  .lg\:event_name_wrapper:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 3rem solid #48A9A6;
+    border-right: 1rem solid transparent;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -68627,6 +68806,22 @@ h1, h2, h3, h4 {
 
   .xl\:bg-home {
     background-image: url('/img/bg.jpg');
+  }
+
+  .xl\:bg-histoire {
+    background-image: url('/img/histoire.jpg');
+  }
+
+  .xl\:bg-valeurs {
+    background-image: url('/img/valeurs.jpg');
+  }
+
+  .xl\:bg-events {
+    background-image: url('/img/events.jpg');
+  }
+
+  .xl\:bg-pa {
+    background-image: url('/img/riders/pa.jpg');
   }
 
   .xl\:from-darkblue {
@@ -83977,6 +84172,24 @@ h1, h2, h3, h4 {
     -webkit-animation: bounce 1s infinite;
             animation: bounce 1s infinite;
   }
+
+  .xl\:event_date_wrapper:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 3rem solid #48A9A6;
+    border-right: 1rem solid transparent;
+  }
+
+  .xl\:event_name_wrapper:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 3rem solid #48A9A6;
+    border-right: 1rem solid transparent;
+  }
 }
 
 @media (min-width: 1536px) {
@@ -85296,6 +85509,22 @@ h1, h2, h3, h4 {
 
   .\32xl\:bg-home {
     background-image: url('/img/bg.jpg');
+  }
+
+  .\32xl\:bg-histoire {
+    background-image: url('/img/histoire.jpg');
+  }
+
+  .\32xl\:bg-valeurs {
+    background-image: url('/img/valeurs.jpg');
+  }
+
+  .\32xl\:bg-events {
+    background-image: url('/img/events.jpg');
+  }
+
+  .\32xl\:bg-pa {
+    background-image: url('/img/riders/pa.jpg');
   }
 
   .\32xl\:from-darkblue {
@@ -100645,5 +100874,23 @@ h1, h2, h3, h4 {
   .\32xl\:animate-bounce {
     -webkit-animation: bounce 1s infinite;
             animation: bounce 1s infinite;
+  }
+
+  .\32xl\:event_date_wrapper:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 3rem solid #48A9A6;
+    border-right: 1rem solid transparent;
+  }
+
+  .\32xl\:event_name_wrapper:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 3rem solid #48A9A6;
+    border-right: 1rem solid transparent;
   }
 }

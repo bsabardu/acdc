@@ -9,3 +9,47 @@
         @apply font-oswald
     }
 }
+
+@layer utilities {
+
+.btn {
+    @apply font-bold py-4 px-8 rounded bg-lightblue text-white;
+  }
+
+.btn-secondary {
+    @apply font-bold py-2 text-lightblue;
+  }
+
+.social-wrapper {
+    @apply bg-lightblue text-darkblue rounded-sm py-2 px-3;
+}
+
+.social-logo {
+    @apply h-4 w-4 text-center;
+}
+
+.riders {
+    padding-top: 136%
+}
+
+@variants responsive {
+    .event_date_wrapper:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 3rem solid #48A9A6;
+    border-right: 1rem solid transparent;
+    }
+    
+    .event_name_wrapper:after {
+        position: absolute;
+        content: "";
+        width: 0;
+        height: 0;
+        border-top: 3rem solid #48A9A6;
+        border-right: 1rem solid transparent;
+        }
+}
+
+}
