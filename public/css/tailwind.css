@@ -17317,6 +17317,12 @@ h1, h2, h3, h4 {
           animation: bounce 1s infinite;
 }
 
+:root {
+  --darkblue: #1C1B2B;
+  --lightblue: #48A9A6;
+  --white: #E0E6F5;
+}
+
 .btn {
   --tw-bg-opacity: 1;
   background-color: rgba(72, 169, 166, var(--tw-bg-opacity));
@@ -17357,7 +17363,7 @@ h1, h2, h3, h4 {
 }
 
 .riders {
-  padding-top: 136%
+  padding-top: 136.5%
 }
 
 .event_date_wrapper:after {

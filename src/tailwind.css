@@ -12,6 +12,15 @@
 
 @layer utilities {
 
+:root {
+    --darkblue: #1C1B2B;
+    --lightblue: #48A9A6;
+    --white: #E0E6F5;
+
+
+}
+
+
 .btn {
     @apply font-bold py-4 px-8 rounded bg-lightblue text-white;
   }
@@ -29,7 +38,7 @@
 }
 
 .riders {
-    padding-top: 136%
+    padding-top: 136.5%
 }
 
 @variants responsive {
