@@ -21,6 +21,22 @@
 }
 
 
+h1,h2,h3,h4,h5 {
+    @apply font-oswald font-extrabold uppercase tracking-tighter
+}
+
+h1 {
+    @apply text-6xl
+}
+
+h2 {
+    @apply text-5xl
+}
+
+h3 {
+    @apply text-4xl
+}
+
 .btn {
     @apply font-bold py-4 px-8 rounded bg-lightblue text-white;
   }
