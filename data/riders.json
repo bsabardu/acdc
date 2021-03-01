@@ -1,0 +1,109 @@
+[{
+        "name": "Potiron",
+        "firstname": "David",
+        "birthdate": "16/08/1990",
+        "size": "1,67",
+        "weight": "64",
+        "speciality": "grimpeur",
+        "img": "dav.jpg"
+    },
+    {
+        "name": "Potiron",
+        "firstname": "Pierre-Alexandre",
+        "birthdate": "08/06/1989",
+        "size": "1,75",
+        "weight": "65",
+        "speciality": "puncheur",
+        "img": "pa.jpg"
+    },
+    {
+        "name": "Levet",
+        "firstname": "Simon",
+        "birthdate": "02/02/1991",
+        "size": "1,78",
+        "weight": "73",
+        "speciality": "puncheur",
+        "img": "simon.jpg"
+    },
+    {
+        "name": "Da Mota",
+        "firstname": "Axel",
+        "birthdate": "01/12/1991",
+        "size": "1,72",
+        "weight": "75",
+        "speciality": "baroudeur",
+        "img": ""
+    },
+    {
+        "name": "Berthelot",
+        "firstname": "Morgane",
+        "birthdate": "26/07/1989",
+        "size": "1,63",
+        "weight": "58",
+        "speciality": "baroudeur",
+        "img": "morgane.jpg"
+    },
+    {
+        "name": "Perroud",
+        "firstname": "Loïc",
+        "birthdate": "14/12/1993",
+        "size": "1,86",
+        "weight": "68",
+        "speciality": "grimpeur",
+        "img": "loic.jpg"
+    },
+    {
+        "name": "Caudal",
+        "firstname": "Jeremy",
+        "birthdate": "1990",
+        "size": "1,71",
+        "weight": "63",
+        "speciality": "puncheur",
+        "img": "jerem.jpg"
+    },
+    {
+        "name": "Sabardu",
+        "firstname": "Benjamin",
+        "birthdate": "12/12/1990",
+        "size": "1,85",
+        "weight": "77",
+        "speciality": "rouleur",
+        "img": "ben.jpg"
+    },
+    {
+        "name": "Westerman",
+        "firstname": "Frédéric",
+        "birthdate": "05/09/1989",
+        "size": "1,84",
+        "weight": "80",
+        "speciality": "sprinteur",
+        "img": ""
+    },
+    {
+        "name": "Hautier",
+        "firstname": "Clément",
+        "birthdate": "25/01/1999",
+        "size": "1,75",
+        "weight": "63",
+        "speciality": "staff",
+        "img": "clement.jpg"
+    },
+    {
+        "name": "Le Padellec",
+        "firstname": "Marie",
+        "birthdate": "1990",
+        "size": "-",
+        "weight": "-",
+        "speciality": "staff",
+        "img": ""
+    },
+    {
+        "name": "Le Floch",
+        "firstname": "Florian",
+        "birthdate": "22/02/1989",
+        "size": "1.80",
+        "weight": "80",
+        "speciality": "sprinteur",
+        "img": ""
+    } 
+]
