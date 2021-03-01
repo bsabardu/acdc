@@ -17402,8 +17402,12 @@ h3 {
   content: "";
   width: 0;
   height: 0;
-  border-top: 3rem solid #48A9A6;
+  border-top: 3rem solid #1C1B2B;
   border-right: 1rem solid transparent;
+}
+
+.event_name_sizing {
+  width: calc(100% - 1rem);
 }
 
 @import url('../../node_modules/font-awesome/css/font-awesome.min.css');
@@ -34106,8 +34110,12 @@ h3 {
     content: "";
     width: 0;
     height: 0;
-    border-top: 3rem solid #48A9A6;
+    border-top: 3rem solid #1C1B2B;
     border-right: 1rem solid transparent;
+  }
+
+  .sm\:event_name_sizing {
+    width: calc(100% - 1rem);
   }
 }
 
@@ -50809,8 +50817,12 @@ h3 {
     content: "";
     width: 0;
     height: 0;
-    border-top: 3rem solid #48A9A6;
+    border-top: 3rem solid #1C1B2B;
     border-right: 1rem solid transparent;
+  }
+
+  .md\:event_name_sizing {
+    width: calc(100% - 1rem);
   }
 }
 
@@ -67512,8 +67524,12 @@ h3 {
     content: "";
     width: 0;
     height: 0;
-    border-top: 3rem solid #48A9A6;
+    border-top: 3rem solid #1C1B2B;
     border-right: 1rem solid transparent;
+  }
+
+  .lg\:event_name_sizing {
+    width: calc(100% - 1rem);
   }
 }
 
@@ -84215,8 +84231,12 @@ h3 {
     content: "";
     width: 0;
     height: 0;
-    border-top: 3rem solid #48A9A6;
+    border-top: 3rem solid #1C1B2B;
     border-right: 1rem solid transparent;
+  }
+
+  .xl\:event_name_sizing {
+    width: calc(100% - 1rem);
   }
 }
 
@@ -100918,7 +100938,11 @@ h3 {
     content: "";
     width: 0;
     height: 0;
-    border-top: 3rem solid #48A9A6;
+    border-top: 3rem solid #1C1B2B;
     border-right: 1rem solid transparent;
+  }
+
+  .\32xl\:event_name_sizing {
+    width: calc(100% - 1rem);
   }
 }

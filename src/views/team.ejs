@@ -1,228 +1,92 @@
 <%- include ('./partials/header.ejs') %>
 
-<main class="mb-10">
-    <section class="intro p-4">
-        <h1 class="text-4xl mb-2 uppercase font-extrabold">Découvrez le team ACDC</h1>
+<% console.log(riders) %>
 
-    </section>
+<main class="mt-6">
+    <header class="intro p-4 max-w-screen-lg m-auto">
+        <h1 class="mb-2">Découvrez le team ACDC</h1>
 
-    <section class="px-4">
+    </header>
+
+    <section class="px-4 max-w-screen-lg m-auto">
         <header>
-            <h2 class="text-3xl mb-2 uppercase font-extrabold">Les coureurs</h2>
+            <h2 class="mb-2">Les coureurs</h2>
         </header>
         <div class="rider_wrapper mx-6">
-            <div class="flex flex-wrap -mx-2 overflow-hidden sm:-mx-2 md:-mx-2 lg:-mx-2 xl:-mx-2">
+            <div class="grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
 
-                <article
-                    class="relative riders bg-pa bg-contain bg-no-repeat h-0 border-darkblue border-solid border-8 my-2 px-2 w-full overflow-hidden sm:my-2 sm:px-2 sm:w-full md:my-2 md:px-2 md:w-1/2 lg:my-2 lg:px-2 lg:w-1/3 xl:my-2 xl:px-2 xl:w-1/4">
-                    <img class="absolute right-4 top-4 riders-type h-16 w-16" src="/img/speciality/puncher.svg"></img>
+                <% for (let rider of riders) { 
+                    
+                    if(rider.speciality !== 'staff') { %>
+
+
+
+                <article class="relative border-darkblue border-solid border-8">
+                    <img src="/img/riders/<%= rider.img || 'poulidor.jpg' %>"></img>
+                    <img class="absolute right-4 top-4 riders-type h-24 w-24 md:h-20 md:w-20 lg:h-16 lg:w-16"
+                        src="/img/speciality/<%= rider.speciality %>.svg"></img>
                     <div
-                        class="absolute riders-content left-0 bottom-0 right-0 uppercase font-oswald font-extrabold text-2xl flex-col items-stretch">
-                        <div class="riders-name px-3 w-full text-darkblue bg-lightblue py-2">Pierre-Alexandre Potiron
+                        class="absolute riders-content left-0 bottom-0 right-0 uppercase font-oswald font-extrabold text-2xl md:text-2xl lg:text-xl flex-col items-stretch">
+                        <div class="riders-name px-3 w-full text-darkblue bg-lightblue py-2"><%= rider.firstname %>
+                            <%= rider.name %>
                         </div>
                         <div
-                            class="riders-infos bg-darkblue bg-opacity-50 text-white px-3 flex items-center py-2 text-3xl">
-                            <div class="riders-birth flex mr-1">10/08/1989</div><span
+                            class="riders-infos bg-darkblue bg-opacity-50 text-white px-3 flex items-center py-2 text-3xl md:text-3xl lg:text-2xl">
+                            <div class="riders-birth flex mr-1"><%= rider.birthdate %></div><span
                                 class="ml-1 mr-2 font-extralight text-4xl">|</span>
-                            <div class="riders-weight mr-1 flex items-center">72<span
+                            <div class="riders-weight mr-1 flex items-center"><%= rider.weight %><span
                                     class="ml-1 text-2xl font-light">kg</span></div><span
                                 class="ml-1 mr-2 font-extralight text-2xl">|</span>
-                            <div class="riders-heightflex items-center">1,78<span
+                            <div class="riders-heightflex items-center"><%= rider.size %><span
                                     class="ml-1 text-2xl font-light">m</span></div>
                         </div>
                     </div>
                 </article>
 
-                <article
-                    class="relative riders bg-pa bg-contain bg-no-repeat h-0 border-darkblue border-solid border-8 my-2 px-2 w-full overflow-hidden sm:my-2 sm:px-2 sm:w-full md:my-2 md:px-2 md:w-1/2 lg:my-2 lg:px-2 lg:w-1/3 xl:my-2 xl:px-2 xl:w-1/4">
-                    <img class="absolute right-4 top-4 riders-type" src="/img/speciality/puncher.svg"></img>
-                    <div
-                        class="absolute riders-content left-0 bottom-0 right-0 uppercase font-oswald font-extrabold text-2xl flex-col items-stretch">
-                        <div class="riders-name px-3 w-full text-darkblue bg-lightblue py-2">Pierre-Alexandre Potiron
-                        </div>
-                        <div class="riders-infos bg-darkblue bg-opacity-50 text-white px-3 flex py-2 text-3xl">
-                            <div class="riders-birth mr-3">10/08/1989 |</div>
-                            <div class="riders-weight mr-3">72</div>
-                            <div class="riders-height mr-3">| 1,78</div>
-                        </div>
-                    </div>
-                </article>
+                <% }} %>
 
-                <article
-                    class="relative riders bg-pa bg-contain bg-no-repeat h-0 border-darkblue border-solid border-8 my-2 px-2 w-full overflow-hidden sm:my-2 sm:px-2 sm:w-full md:my-2 md:px-2 md:w-1/2 lg:my-2 lg:px-2 lg:w-1/3 xl:my-2 xl:px-2 xl:w-1/4">
-                    <img class="absolute right-4 top-4 riders-type" src="/img/speciality/puncher.svg"></img>
-                    <div
-                        class="absolute riders-content left-0 bottom-0 right-0 uppercase font-oswald font-extrabold text-2xl flex-col items-stretch">
-                        <div class="riders-name px-3 w-full text-darkblue bg-lightblue py-2">Pierre-Alexandre Potiron
-                        </div>
-                        <div class="riders-infos bg-darkblue bg-opacity-50 text-white px-3 flex py-2 text-3xl">
-                            <div class="riders-birth mr-3">10/08/1989 |</div>
-                            <div class="riders-weight mr-3">72</div>
-                            <div class="riders-height mr-3">| 1,78</div>
-                        </div>
-                    </div>
-                </article>
-
-                <article
-                    class="relative riders bg-pa bg-contain bg-no-repeat h-0 border-darkblue border-solid border-8 my-2 px-2 w-full overflow-hidden sm:my-2 sm:px-2 sm:w-full md:my-2 md:px-2 md:w-1/2 lg:my-2 lg:px-2 lg:w-1/3 xl:my-2 xl:px-2 xl:w-1/4">
-                    <img class="absolute right-4 top-4 riders-type" src="/img/speciality/puncher.svg"></img>
-                    <div
-                        class="absolute riders-content left-0 bottom-0 right-0 uppercase font-oswald font-extrabold text-2xl flex-col items-stretch">
-                        <div class="riders-name px-3 w-full text-darkblue bg-lightblue py-2">Pierre-Alexandre Potiron
-                        </div>
-                        <div class="riders-infos bg-darkblue bg-opacity-50 text-white px-3 flex py-2 text-3xl">
-                            <div class="riders-birth mr-3">10/08/1989 |</div>
-                            <div class="riders-weight mr-3">72</div>
-                            <div class="riders-height mr-3">| 1,78</div>
-                        </div>
-                    </div>
-                </article>
-
-                <article
-                    class="relative riders bg-pa bg-contain bg-no-repeat h-0 border-darkblue border-solid border-8 my-2 px-2 w-full overflow-hidden sm:my-2 sm:px-2 sm:w-full md:my-2 md:px-2 md:w-1/2 lg:my-2 lg:px-2 lg:w-1/3 xl:my-2 xl:px-2 xl:w-1/4">
-                    <img class="absolute right-4 top-4 riders-type" src="/img/speciality/puncher.svg"></img>
-                    <div
-                        class="absolute riders-content left-0 bottom-0 right-0 uppercase font-oswald font-extrabold text-2xl flex-col items-stretch">
-                        <div class="riders-name px-3 w-full text-darkblue bg-lightblue py-2">Pierre-Alexandre Potiron
-                        </div>
-                        <div class="riders-infos bg-darkblue bg-opacity-50 text-white px-3 flex py-2 text-3xl">
-                            <div class="riders-birth mr-3">10/08/1989 |</div>
-                            <div class="riders-weight mr-3">72</div>
-                            <div class="riders-height mr-3">| 1,78</div>
-                        </div>
-                    </div>
-                </article>
-
-                <article
-                    class="relative riders bg-pa bg-contain bg-no-repeat h-0 border-darkblue border-solid border-8 my-2 px-2 w-full overflow-hidden sm:my-2 sm:px-2 sm:w-full md:my-2 md:px-2 md:w-1/2 lg:my-2 lg:px-2 lg:w-1/3 xl:my-2 xl:px-2 xl:w-1/4">
-                    <img class="absolute right-4 top-4 riders-type" src="/img/speciality/puncher.svg"></img>
-                    <div
-                        class="absolute riders-content left-0 bottom-0 right-0 uppercase font-oswald font-extrabold text-2xl flex-col items-stretch">
-                        <div class="riders-name px-3 w-full text-darkblue bg-lightblue py-2">Pierre-Alexandre Potiron
-                        </div>
-                        <div class="riders-infos bg-darkblue bg-opacity-50 text-white px-3 flex py-2 text-3xl">
-                            <div class="riders-birth mr-3">10/08/1989 |</div>
-                            <div class="riders-weight mr-3">72</div>
-                            <div class="riders-height mr-3">| 1,78</div>
-                        </div>
-                    </div>
-                </article>
-
-                <article
-                    class="relative riders bg-pa bg-contain bg-no-repeat h-0 border-darkblue border-solid border-8 my-2 px-2 w-full overflow-hidden sm:my-2 sm:px-2 sm:w-full md:my-2 md:px-2 md:w-1/2 lg:my-2 lg:px-2 lg:w-1/3 xl:my-2 xl:px-2 xl:w-1/4">
-                    <img class="absolute right-4 top-4 riders-type" src="/img/speciality/puncher.svg"></img>
-                    <div
-                        class="absolute riders-content left-0 bottom-0 right-0 uppercase font-oswald font-extrabold text-2xl flex-col items-stretch">
-                        <div class="riders-name px-3 w-full text-darkblue bg-lightblue py-2">Pierre-Alexandre Potiron
-                        </div>
-                        <div class="riders-infos bg-darkblue bg-opacity-50 text-white px-3 flex py-2 text-3xl">
-                            <div class="riders-birth mr-3">10/08/1989 |</div>
-                            <div class="riders-weight mr-3">72</div>
-                            <div class="riders-height mr-3">| 1,78</div>
-                        </div>
-                    </div>
-                </article>
-
-                <article
-                    class="relative riders bg-pa bg-contain bg-no-repeat h-0 border-darkblue border-solid border-8 my-2 px-2 w-full overflow-hidden sm:my-2 sm:px-2 sm:w-full md:my-2 md:px-2 md:w-1/2 lg:my-2 lg:px-2 lg:w-1/3 xl:my-2 xl:px-2 xl:w-1/4">
-                    <img class="absolute right-4 top-4 riders-type" src="/img/speciality/puncher.svg"></img>
-                    <div
-                        class="absolute riders-content left-0 bottom-0 right-0 uppercase font-oswald font-extrabold text-2xl flex-col items-stretch">
-                        <div class="riders-name px-3 w-full text-darkblue bg-lightblue py-2">Pierre-Alexandre Potiron
-                        </div>
-                        <div class="riders-infos bg-darkblue bg-opacity-50 text-white px-3 flex py-2 text-3xl">
-                            <div class="riders-birth mr-3">10/08/1989 |</div>
-                            <div class="riders-weight mr-3">72</div>
-                            <div class="riders-height mr-3">| 1,78</div>
-                        </div>
-                    </div>
-                </article>
-
-                <article
-                    class="relative riders bg-pa bg-contain bg-no-repeat h-0 border-darkblue border-solid border-8 my-2 px-2 w-full overflow-hidden sm:my-2 sm:px-2 sm:w-full md:my-2 md:px-2 md:w-1/2 lg:my-2 lg:px-2 lg:w-1/3 xl:my-2 xl:px-2 xl:w-1/4">
-                    <img class="absolute right-4 top-4 riders-type" src="/img/speciality/puncher.svg"></img>
-                    <div
-                        class="absolute riders-content left-0 bottom-0 right-0 uppercase font-oswald font-extrabold text-2xl flex-col items-stretch">
-                        <div class="riders-name px-3 w-full text-darkblue bg-lightblue py-2">Pierre-Alexandre Potiron
-                        </div>
-                        <div class="riders-infos bg-darkblue bg-opacity-50 text-white px-3 flex py-2 text-3xl">
-                            <div class="riders-birth mr-3">10/08/1989 |</div>
-                            <div class="riders-weight mr-3">72</div>
-                            <div class="riders-height mr-3">| 1,78</div>
-                        </div>
-                    </div>
-                </article>
-
-                <article
-                    class="relative riders bg-pa bg-contain bg-no-repeat h-0 border-darkblue border-solid border-8 my-2 px-2 w-full overflow-hidden sm:my-2 sm:px-2 sm:w-full md:my-2 md:px-2 md:w-1/2 lg:my-2 lg:px-2 lg:w-1/3 xl:my-2 xl:px-2 xl:w-1/4">
-                    <img class="absolute right-4 top-4 riders-type" src="/img/speciality/puncher.svg"></img>
-                    <div
-                        class="absolute riders-content left-0 bottom-0 right-0 uppercase font-oswald font-extrabold text-2xl flex-col items-stretch">
-                        <div class="riders-name px-3 w-full text-darkblue bg-lightblue py-2">Pierre-Alexandre Potiron
-                        </div>
-                        <div class="riders-infos bg-darkblue bg-opacity-50 text-white px-3 flex py-2 text-3xl">
-                            <div class="riders-birth mr-3">10/08/1989 |</div>
-                            <div class="riders-weight mr-3">72</div>
-                            <div class="riders-height mr-3">| 1,78</div>
-                        </div>
-                    </div>
-                </article>
-
-                <article
-                    class="relative riders bg-pa bg-contain bg-no-repeat h-0 border-darkblue border-solid border-8 my-2 px-2 w-full overflow-hidden sm:my-2 sm:px-2 sm:w-full md:my-2 md:px-2 md:w-1/2 lg:my-2 lg:px-2 lg:w-1/3 xl:my-2 xl:px-2 xl:w-1/4">
-                    <img class="absolute right-4 top-4 riders-type" src="/img/speciality/puncher.svg"></img>
-                    <div
-                        class="absolute riders-content left-0 bottom-0 right-0 uppercase font-oswald font-extrabold text-2xl flex-col items-stretch">
-                        <div class="riders-name px-3 w-full text-darkblue bg-lightblue py-2">Pierre-Alexandre Potiron
-                        </div>
-                        <div class="riders-infos bg-darkblue bg-opacity-50 text-white px-3 flex py-2 text-3xl">
-                            <div class="riders-birth mr-3">10/08/1989 |</div>
-                            <div class="riders-weight mr-3">72</div>
-                            <div class="riders-height mr-3">| 1,78</div>
-                        </div>
-                    </div>
-                </article>
 
             </div>
 
         </div>
     </section>
-    <section class="px-4">
+
+    <section class="mt-6 px-4 max-w-screen-lg m-auto">
         <header>
-            <h2 class="text-3xl mb-2 uppercase font-extrabold">Le staff</h2>
+            <h2 class="mb-2">Le staff</h2>
         </header>
         <div class="rider_wrapper mx-6">
-            <div class="flex flex-wrap -mx-2 overflow-hidden sm:-mx-2 md:-mx-2 lg:-mx-2 xl:-mx-2">
+            <div class="grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
 
-                <article
-                    class="relative riders bg-pa bg-contain bg-no-repeat h-0 border-darkblue border-solid border-8 my-2 px-2 w-full overflow-hidden sm:my-2 sm:px-2 sm:w-full md:my-2 md:px-2 md:w-1/2 lg:my-2 lg:px-2 lg:w-1/3 xl:my-2 xl:px-2 xl:w-1/4">
-                    <img class="absolute right-4 top-4 riders-type" src="/img/speciality/puncher.svg"></img>
+                <% for (let rider of riders) { 
+                    
+                    if(rider.speciality === 'staff') { %>
+
+
+
+                <article class="relative border-darkblue border-solid border-8">
+                    <img src="/img/riders/<%= rider.img || 'poulidor.jpg' %>"></img>
+                    <img class="absolute right-4 top-4 riders-type h-24 w-24 md:h-20 md:w-20 lg:h-16 lg:w-16"
+                        src="/img/speciality/<%= rider.speciality %>.svg"></img>
                     <div
-                        class="absolute riders-content left-0 bottom-0 right-0 uppercase font-oswald font-extrabold text-2xl flex-col items-stretch">
-                        <div class="riders-name px-3 w-full text-darkblue bg-lightblue py-2">Pierre-Alexandre Potiron
+                        class="absolute riders-content left-0 bottom-0 right-0 uppercase font-oswald font-extrabold text-2xl md:text-2xl lg:text-xl flex-col items-stretch">
+                        <div class="riders-name px-3 w-full text-darkblue bg-lightblue py-2"><%= rider.firstname %>
+                            <%= rider.name %>
                         </div>
-                        <div class="riders-infos bg-darkblue bg-opacity-50 text-white px-3 flex py-2 text-3xl">
-                            <div class="riders-birth mr-3">10/08/1989 |</div>
-                            <div class="riders-weight mr-3">72</div>
-                            <div class="riders-height mr-3">| 1,78</div>
+                        <div
+                            class="riders-infos bg-darkblue bg-opacity-50 text-white px-3 flex items-center py-2 text-3xl md:text-3xl lg:text-2xl">
+                            <div class="riders-birth flex mr-1"><%= rider.birthdate %></div><span
+                                class="ml-1 mr-2 font-extralight text-4xl">|</span>
+                            <div class="riders-weight mr-1 flex items-center"><%= rider.size %><span
+                                    class="ml-1 text-2xl font-light">kg</span></div><span
+                                class="ml-1 mr-2 font-extralight text-2xl">|</span>
+                            <div class="riders-heightflex items-center"><%= rider.weight %><span
+                                    class="ml-1 text-2xl font-light">m</span></div>
                         </div>
                     </div>
                 </article>
 
-                <article
-                    class="relative riders bg-pa bg-contain bg-no-repeat h-0 border-darkblue border-solid border-8 my-2 px-2 w-full overflow-hidden sm:my-2 sm:px-2 sm:w-full md:my-2 md:px-2 md:w-1/2 lg:my-2 lg:px-2 lg:w-1/3 xl:my-2 xl:px-2 xl:w-1/4">
-                    <img class="absolute right-4 top-4 riders-type" src="/img/speciality/puncher.svg"></img>
-                    <div
-                        class="absolute riders-content left-0 bottom-0 right-0 uppercase font-oswald font-extrabold text-2xl flex-col items-stretch">
-                        <div class="riders-name px-3 w-full text-darkblue bg-lightblue py-2">Pierre-Alexandre Potiron
-                        </div>
-                        <div class="riders-infos bg-darkblue bg-opacity-50 text-white px-3 flex py-2 text-3xl">
-                            <div class="riders-birth mr-3">10/08/1989 |</div>
-                            <div class="riders-weight mr-3">72</div>
-                            <div class="riders-height mr-3">| 1,78</div>
-                        </div>
-                    </div>
-                </article>
+                <% }} %>
 
             </div>
         </div>

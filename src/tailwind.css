@@ -72,9 +72,13 @@ h3 {
         content: "";
         width: 0;
         height: 0;
-        border-top: 3rem solid #48A9A6;
+        border-top: 3rem solid #1C1B2B;
         border-right: 1rem solid transparent;
         }
+
+    .event_name_sizing {
+        width: calc(100% - 1rem);
+    }
 }
 
 }

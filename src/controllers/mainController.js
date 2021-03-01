@@ -1,3 +1,6 @@
+const fs = require('fs');
+const path = require('path');
+
 exports.homePage = (req,res,next) => {
     res.render('home');
 }
@@ -10,6 +13,11 @@ exports.eventsPage = (req,res,next) => {
     res.render('events');
 }
 
-exports.teamPage = (req,res,next) => {
-    res.render('team');
+exports.teamPage =  (req,res,next) => {
+
+    const riders = JSON.parse(fs.readFileSync(path.resolve(__dirname, '../../data/riders.json'), 'utf8'))
+
+    console.log(riders);
+
+    res.render('team', {riders : riders});
 }
