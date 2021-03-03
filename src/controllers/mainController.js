@@ -26,3 +26,7 @@ exports.teamPage =  (req,res,next) => {
 exports.mentionsPage = (req,res,next) => {
     res.render('mentions');
 }
+
+exports.contactPage = (req,res,next) => {
+    res.render('contact');
+}

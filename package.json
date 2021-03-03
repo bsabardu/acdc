@@ -6,16 +6,18 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.2",
     "autoprefixer": "^10.2.4",
+    "body-parser": "^1.19.0",
     "dotenv": "^8.2.0",
     "ejs": "^3.1.5",
     "express": "^4.17.1",
+    "nodemailer": "^6.5.0",
     "pg": "^8.5.1",
     "tailwindcss": "^2.0.3"
   },
   "devDependencies": {},
   "scripts": {
     "develop": "nodemon index.js",
-    "tailwind":"npx tailwindcss-cli@latest build ./src/tailwind.css -o ./public/css/tailwind.css", 
+    "tailwind": "npx tailwindcss-cli@latest build ./src/tailwind.css -o ./public/css/tailwind.css",
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

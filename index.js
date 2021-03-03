@@ -2,6 +2,10 @@ require('dotenv').config();
 
 const express = require('express');
 const app = express();
+const nodemailer = require('nodemailer')
+const bodyParser = require('body-parser')
+app.use(bodyParser.urlencoded({extended: true}))
+
 const router = require('./src/router');
 const path = require('path');
 
