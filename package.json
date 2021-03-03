@@ -14,8 +14,9 @@
   },
   "devDependencies": {},
   "scripts": {
+    "develop": "nodemon index.js",
     "tailwind":"npx tailwindcss-cli@latest build ./src/tailwind.css -o ./public/css/tailwind.css", 
-    "start": "nodemon index.js",
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Benjamin Sabardu",

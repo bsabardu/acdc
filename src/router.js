@@ -9,4 +9,6 @@ router.get('/calendrier', mainController.eventsPage)
 
 router.get('/team', mainController.teamPage)
 
+router.get('/mentions-legales', mainController.mentionsPage)
+
 module.exports = router

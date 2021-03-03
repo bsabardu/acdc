@@ -21,3 +21,8 @@ exports.teamPage =  (req,res,next) => {
 
     res.render('team', {riders : riders});
 }
+
+
+exports.mentionsPage = (req,res,next) => {
+    res.render('mentions');
+}
