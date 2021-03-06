@@ -8704,7 +8704,6 @@ h1, h2, h3, h4 {
 }
 
 .sticky {
-  position: -webkit-sticky;
   position: sticky;
 }
 
@@ -17323,6 +17322,10 @@ h1, h2, h3, h4 {
   --white: #E0E6F5;
 }
 
+body,html {
+  height: 100%
+}
+
 h1, h2, h3, h4, h5 {
   font-family: 'Oswald', sans-serif;
   font-weight: 800;
@@ -25562,7 +25565,6 @@ h3 {
   }
 
   .sm\:sticky {
-    position: -webkit-sticky;
     position: sticky;
   }
 
@@ -42269,7 +42271,6 @@ h3 {
   }
 
   .md\:sticky {
-    position: -webkit-sticky;
     position: sticky;
   }
 
@@ -58976,7 +58977,6 @@ h3 {
   }
 
   .lg\:sticky {
-    position: -webkit-sticky;
     position: sticky;
   }
 
@@ -75683,7 +75683,6 @@ h3 {
   }
 
   .xl\:sticky {
-    position: -webkit-sticky;
     position: sticky;
   }
 
@@ -92390,7 +92389,6 @@ h3 {
   }
 
   .\32xl\:sticky {
-    position: -webkit-sticky;
     position: sticky;
   }
 

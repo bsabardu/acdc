@@ -80,6 +80,15 @@
         "img": ""
     },
     {
+        "name": "Elmigli",
+        "firstname": "Ottman",
+        "birthdate": "",
+        "size": "2,22",
+        "weight": "66",
+        "speciality": "sprinteur",
+        "img": ""
+    },
+    {
         "name": "Hautier",
         "firstname": "Clément",
         "birthdate": "25/01/1999",
