@@ -19,29 +19,8 @@
                     
                     if(rider.speciality !== 'staff') { %>
 
-
-
-                <article class="relative border-darkblue border-solid border-8">
-                    <img src="/img/riders/<%= rider.img || 'poulidor.jpg' %>"></img>
-                    <img class="absolute right-4 top-4 riders-type h-24 w-24 md:h-20 md:w-20 lg:h-16 lg:w-16"
-                        src="/img/speciality/<%= rider.speciality %>.svg"></img>
-                    <div
-                        class="absolute riders-content left-0 bottom-0 right-0 uppercase font-oswald font-extrabold text-2xl md:text-2xl lg:text-xl flex-col items-stretch">
-                        <div class="riders-name px-3 w-full text-darkblue bg-lightblue py-2"><%= rider.firstname %>
-                            <%= rider.name %>
-                        </div>
-                        <div
-                            class="riders-infos bg-darkblue bg-opacity-50 text-white px-3 flex items-center py-2 text-3xl md:text-3xl lg:text-2xl">
-                            <div class="riders-birth flex mr-1"><%= rider.birthdate %></div><span
-                                class="ml-1 mr-2 font-extralight text-4xl">|</span>
-                            <div class="riders-weight mr-1 flex items-center"><%= rider.weight %><span
-                                    class="ml-1 text-2xl font-light">kg</span></div><span
-                                class="ml-1 mr-2 font-extralight text-2xl">|</span>
-                            <div class="riders-heightflex items-center"><%= rider.size %><span
-                                    class="ml-1 text-2xl font-light">m</span></div>
-                        </div>
-                    </div>
-                </article>
+    <%- include ('./partials/riders.ejs', {rider}) %>
+                    
 
                 <% }} %>
 
@@ -63,28 +42,8 @@
                     if(rider.speciality === 'staff') { %>
 
 
+                        <%- include ('./partials/riders.ejs', {rider}) %>
 
-                <article class="relative border-darkblue border-solid border-8">
-                    <img src="/img/riders/<%= rider.img || 'poulidor.jpg' %>"></img>
-                    <img class="absolute right-4 top-4 riders-type h-24 w-24 md:h-20 md:w-20 lg:h-16 lg:w-16"
-                        src="/img/speciality/<%= rider.speciality %>.svg"></img>
-                    <div
-                        class="absolute riders-content left-0 bottom-0 right-0 uppercase font-oswald font-extrabold text-2xl md:text-2xl lg:text-xl flex-col items-stretch">
-                        <div class="riders-name px-3 w-full text-darkblue bg-lightblue py-2"><%= rider.firstname %>
-                            <%= rider.name %>
-                        </div>
-                        <div
-                            class="riders-infos bg-darkblue bg-opacity-50 text-white px-3 flex items-center py-2 text-3xl md:text-3xl lg:text-2xl">
-                            <div class="riders-birth flex mr-1"><%= rider.birthdate %></div><span
-                                class="ml-1 mr-2 font-extralight text-4xl">|</span>
-                            <div class="riders-weight mr-1 flex items-center"><%= rider.size %><span
-                                    class="ml-1 text-2xl font-light">kg</span></div><span
-                                class="ml-1 mr-2 font-extralight text-2xl">|</span>
-                            <div class="riders-heightflex items-center"><%= rider.weight %><span
-                                    class="ml-1 text-2xl font-light">m</span></div>
-                        </div>
-                    </div>
-                </article>
 
                 <% }} %>
 

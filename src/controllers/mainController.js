@@ -17,8 +17,6 @@ exports.teamPage =  (req,res,next) => {
 
     const riders = JSON.parse(fs.readFileSync(path.resolve(__dirname, '../../data/riders.json'), 'utf8'))
 
-    console.log(riders);
-
     res.render('team', {riders : riders});
 }
 
