@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 exports.homePage = (req,res,next) => {
-    res.render('home');
+    res.render('home', {url: req.url});
 }
 
 exports.clubPage = (req,res,next) => {

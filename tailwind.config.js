@@ -13,6 +13,9 @@ module.exports = {
       'oswald': ["'Oswald'", 'sans-serif'],
       'lato': ["'Lato'", 'serif'] // Ensure fonts with spaces have " " surrounding it.
     },
+    borderWidth: {
+      '10': '10px',
+    },
     extend: {
         backgroundImage: theme => ({
          'home': "url('/img/bg.jpg')",

@@ -1,6 +1,5 @@
 app = {
     init: function () {
-        console.log('init!');
         app.burgerButton.addEventListener('click', app.onClickMenu);
 
     },
@@ -18,6 +17,8 @@ app = {
         app.crossMenuIcon.classList.toggle("hidden");
         app.logoDiv.classList.toggle("hidden");
     }
+
+    
 
 }
 

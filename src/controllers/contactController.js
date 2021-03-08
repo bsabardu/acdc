@@ -1,7 +1,6 @@
 const nodemailer = require('nodemailer')
 
 exports.sendMail = (req, res, next) => {
-    console.log(req.body);
 
     // Instantiate the SMTP server
     const smtpTrans = nodemailer.createTransport({
