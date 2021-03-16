@@ -25,6 +25,10 @@ exports.mentionsPage = (req,res,next) => {
     res.render('mentions');
 }
 
+exports.creditsPage = (req,res,next) => {
+    res.render('credits');
+}
+
 exports.contactPage = (req,res,next) => {
     res.render('contact');
 }

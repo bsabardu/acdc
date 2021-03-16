@@ -1837,10 +1837,6 @@ h1, h2, h3, h4 {
   background-image: url('/img/events.jpg');
 }
 
-.bg-pa {
-  background-image: url('/img/riders/pa.jpg');
-}
-
 .from-darkblue {
   --tw-gradient-from: #1C1B2B;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(28, 27, 43, 0));
@@ -17285,6 +17281,10 @@ h3 {
   width: calc(100% - 1rem);
 }
 
+.full-height {
+  min-height: calc(100vh - 64px - 159px)
+}
+
 @import url('../../node_modules/font-awesome/css/font-awesome.min.css');
 
 @media (min-width: 640px) {
@@ -18568,10 +18568,6 @@ h3 {
 
   .sm\:bg-events {
     background-image: url('/img/events.jpg');
-  }
-
-  .sm\:bg-pa {
-    background-image: url('/img/riders/pa.jpg');
   }
 
   .sm\:from-darkblue {
@@ -33863,6 +33859,10 @@ h3 {
   .sm\:event_name_sizing {
     width: calc(100% - 1rem);
   }
+
+  .sm\:full-height {
+    min-height: calc(100vh - 64px - 159px)
+  }
 }
 
 @media (min-width: 768px) {
@@ -35146,10 +35146,6 @@ h3 {
 
   .md\:bg-events {
     background-image: url('/img/events.jpg');
-  }
-
-  .md\:bg-pa {
-    background-image: url('/img/riders/pa.jpg');
   }
 
   .md\:from-darkblue {
@@ -50441,6 +50437,10 @@ h3 {
   .md\:event_name_sizing {
     width: calc(100% - 1rem);
   }
+
+  .md\:full-height {
+    min-height: calc(100vh - 64px - 159px)
+  }
 }
 
 @media (min-width: 1024px) {
@@ -51724,10 +51724,6 @@ h3 {
 
   .lg\:bg-events {
     background-image: url('/img/events.jpg');
-  }
-
-  .lg\:bg-pa {
-    background-image: url('/img/riders/pa.jpg');
   }
 
   .lg\:from-darkblue {
@@ -67019,6 +67015,10 @@ h3 {
   .lg\:event_name_sizing {
     width: calc(100% - 1rem);
   }
+
+  .lg\:full-height {
+    min-height: calc(100vh - 64px - 159px)
+  }
 }
 
 @media (min-width: 1280px) {
@@ -68302,10 +68302,6 @@ h3 {
 
   .xl\:bg-events {
     background-image: url('/img/events.jpg');
-  }
-
-  .xl\:bg-pa {
-    background-image: url('/img/riders/pa.jpg');
   }
 
   .xl\:from-darkblue {
@@ -83597,6 +83593,10 @@ h3 {
   .xl\:event_name_sizing {
     width: calc(100% - 1rem);
   }
+
+  .xl\:full-height {
+    min-height: calc(100vh - 64px - 159px)
+  }
 }
 
 @media (min-width: 1536px) {
@@ -84880,10 +84880,6 @@ h3 {
 
   .\32xl\:bg-events {
     background-image: url('/img/events.jpg');
-  }
-
-  .\32xl\:bg-pa {
-    background-image: url('/img/riders/pa.jpg');
   }
 
   .\32xl\:from-darkblue {
@@ -100174,5 +100170,9 @@ h3 {
 
   .\32xl\:event_name_sizing {
     width: calc(100% - 1rem);
+  }
+
+  .\32xl\:full-height {
+    min-height: calc(100vh - 64px - 159px)
   }
 }

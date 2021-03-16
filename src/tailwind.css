@@ -83,6 +83,10 @@ h3 {
     .event_name_sizing {
         width: calc(100% - 1rem);
     }
+
+    .full-height {
+        min-height: calc(100vh - 64px - 159px)
+    }
 }
 
 }

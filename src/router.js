@@ -12,6 +12,8 @@ router.get('/team', mainController.teamPage)
 
 router.get('/mentions-legales', mainController.mentionsPage)
 
+router.get('/credits', mainController.creditsPage)
+
 router.get('/contact', mainController.contactPage)
 
 

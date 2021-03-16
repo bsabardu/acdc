@@ -24,8 +24,6 @@ module.exports = {
          'histoire': "url('/img/histoire.jpg')",
          'valeurs': "url('/img/valeurs.jpg')",
          'events': "url('/img/events.jpg')",
-         //riders
-         'pa': "url('/img/riders/pa.jpg')",
         })
 
     },
