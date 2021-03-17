@@ -82,11 +82,11 @@
     {
         "name": "Elmigli",
         "firstname": "Ottman",
-        "birthdate": "",
-        "size": "2,22",
-        "weight": "66",
+        "birthdate": "22/04/1992",
+        "size": "1,73",
+        "weight": "76",
         "speciality": "sprinteur",
-        "img": ""
+        "img": "ottman.jpg"
     },
     {
         "name": "Hautier",
